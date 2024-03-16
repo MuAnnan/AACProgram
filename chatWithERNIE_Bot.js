@@ -1,6 +1,6 @@
 async function getAccessToken() {
-    const API_KEY = "QNCWARVK02rNekZ8UmxwX1q4"
-    const SECRET_KEY = "6n0T0sFGbisrTYAvRR3CQrDcChGx2TAY"
+    const API_KEY = "your_API_KEY"
+    const SECRET_KEY = "your_SECRET_KEY"
     const url = 'https://aip.baidubce.com/oauth/2.0/token?client_id=' + API_KEY + '&client_secret=' + SECRET_KEY + '&grant_type=client_credentials'
     const response = await fetch(url)
     const responseText = await response.text()
